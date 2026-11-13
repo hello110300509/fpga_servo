@@ -1,0 +1,1943 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Jul 31 09:33:48 2026
+# Process ID         : 59484
+# Current directory  : D:/1projectapp/FPGA/prj/current/current.runs/impl_1
+# Command line       : vivado.exe -log fpga_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fpga_top.tcl -notrace
+# Log file           : D:/1projectapp/FPGA/prj/current/current.runs/impl_1/fpga_top.vdi
+# Journal file       : D:/1projectapp/FPGA/prj/current/current.runs/impl_1\vivado.jou
+# Running On         : snowman
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 5800H with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 14877 MB
+# Swap memory        : 39815 MB
+# Total Virtual      : 54692 MB
+# Available Virtual  : 4627 MB
+#-----------------------------------------------------------
+source fpga_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 491.309 ; gain = 209.559
+Command: link_design -top fpga_top -part xc7a35tfgg484-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint 'd:/1projectapp/FPGA/prj/current/current.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.dcp' for cell 'instance_name'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 715.836 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 673 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/1projectapp/FPGA/prj/current/current.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'instance_name/inst'
+Finished Parsing XDC File [d:/1projectapp/FPGA/prj/current/current.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'instance_name/inst'
+Parsing XDC File [d:/1projectapp/FPGA/prj/current/current.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'instance_name/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/1projectapp/FPGA/prj/current/current.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [d:/1projectapp/FPGA/prj/current/current.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc:54]
+get_clocks: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1403.688 ; gain = 558.254
+Finished Parsing XDC File [d:/1projectapp/FPGA/prj/current/current.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'instance_name/inst'
+Parsing XDC File [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'locked'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_miso'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_mosi'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_sck'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_ss'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_mosi'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_miso'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'locked'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_sck'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_ss'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1403.688 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+11 Infos, 14 Warnings, 14 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1403.688 ; gain = 897.453
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1403.688 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1a8f4c34a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.259 . Memory (MB): peak = 1433.543 ; gain = 29.855
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1a8f4c34a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1855.840 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1a8f4c34a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1855.840 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1a8f4c34a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1855.840 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1a8f4c34a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.204 . Memory (MB): peak = 1855.840 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1a8f4c34a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.218 . Memory (MB): peak = 1855.840 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1a8f4c34a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.218 . Memory (MB): peak = 1855.840 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 2 inverters resulting in an inversion of 46 pins
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 19bd9a895
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.299 . Memory (MB): peak = 1855.840 ; gain = 0.000
+Retarget | Checksum: 19bd9a895
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 3 cells
+INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1eb0f754c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.343 . Memory (MB): peak = 1855.840 ; gain = 0.000
+Constant propagation | Checksum: 1eb0f754c
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1855.840 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1855.840 ; gain = 0.000
+Phase 5 Sweep | Checksum: 22fb5edf2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.429 . Memory (MB): peak = 1855.840 ; gain = 0.000
+Sweep | Checksum: 22fb5edf2
+INFO: [Opt 31-389] Phase Sweep created 6 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 22fb5edf2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.476 . Memory (MB): peak = 1855.840 ; gain = 0.000
+BUFG optimization | Checksum: 22fb5edf2
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 22fb5edf2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.482 . Memory (MB): peak = 1855.840 ; gain = 0.000
+Shift Register Optimization | Checksum: 22fb5edf2
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 26b7db9bc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.498 . Memory (MB): peak = 1855.840 ; gain = 0.000
+Post Processing Netlist | Checksum: 26b7db9bc
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1a3f2633d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.679 . Memory (MB): peak = 1855.840 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1855.840 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1a3f2633d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.698 . Memory (MB): peak = 1855.840 ; gain = 0.000
+Phase 9 Finalization | Checksum: 1a3f2633d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.699 . Memory (MB): peak = 1855.840 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               3  |                                              1  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               6  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1a3f2633d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.702 . Memory (MB): peak = 1855.840 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 4 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 8
+Ending PowerOpt Patch Enables Task | Checksum: 1a3f2633d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1a3f2633d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1939.934 ; gain = 84.094
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1a3f2633d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1a3f2633d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1939.934 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+39 Infos, 14 Warnings, 14 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1939.934 ; gain = 536.246
+INFO: [Vivado 12-24828] Executing command : report_drc -file fpga_top_drc_opted.rpt -pb fpga_top_drc_opted.pb -rpx fpga_top_drc_opted.rpx
+Command: report_drc -file fpga_top_drc_opted.rpt -pb fpga_top_drc_opted.pb -rpx fpga_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/1projectapp/FPGA/prj/current/current.runs/impl_1/fpga_top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1939.934 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/1projectapp/FPGA/prj/current/current.runs/impl_1/fpga_top_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 31 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1154fb79e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1b4e41d4b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.656 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 26908f97e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 26908f97e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 26908f97e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1bdf89355
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 21ab85912
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 21ab85912
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 32ec0dcc7
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 28c221edf
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 62 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 23 nets or LUTs. Breaked 0 LUT, combined 23 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             23  |                    23  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             23  |                    23  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 29456901b
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Phase 2.5 Global Place Phase2 | Checksum: 29ef0989d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 29ef0989d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 30b406d04
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2ac2cff16
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 2b4f8d3ab
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 24736e46c
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 269174de5
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 28879976b
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 24471b8d9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 24716d50e
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 29a3c8ade
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 29a3c8ade
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 348e5604b
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-50.390 | TNS=-601.830 |
+Phase 1 Physical Synthesis Initialization | Checksum: 23d24c24f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1939.934 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 2f3ce758b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 348e5604b
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-49.817. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1b52e196e
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1b52e196e
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1b52e196e
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1b52e196e
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 1b52e196e
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 12296c478
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Ending Placer Task | Checksum: da193aaf
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1939.934 ; gain = 0.000
+82 Infos, 14 Warnings, 14 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1939.934 ; gain = 0.000
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file fpga_top_utilization_placed.rpt -pb fpga_top_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file fpga_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1939.934 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_io -file fpga_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1939.934 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.279 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.319 . Memory (MB): peak = 1939.934 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/1projectapp/FPGA/prj/current/current.runs/impl_1/fpga_top_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.543 . Memory (MB): peak = 1939.934 ; gain = 0.000
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 0.00s |  WALL: 0.59s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.817 | TNS=-595.620 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1cef951c1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.383 . Memory (MB): peak = 1939.934 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.817 | TNS=-595.620 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 1cef951c1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.468 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.817 | TNS=-595.620 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/Q[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net instance_name/inst/clk_out1_clk_wiz_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_2_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[3]_i_5_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[3]_i_5_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.812 | TNS=-595.579 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[3]_i_6_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[3]_i_6_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.804 | TNS=-594.545 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[7]_i_5_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[7]_i_5_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.795 | TNS=-594.537 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[7]_i_6_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[7]_i_6_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.724 | TNS=-594.292 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[3]_i_3_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[3]_i_3_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.720 | TNS=-594.280 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[3]_i_4_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[3]_i_4_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.700 | TNS=-594.080 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[7]_i_3_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[7]_i_3_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.696 | TNS=-594.112 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[7]_i_4_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[7]_i_4_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.693 | TNS=-594.132 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[3]_i_5_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[3]_i_5_comp_1.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_22_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.686 | TNS=-594.067 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[3]_i_6_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[3]_i_6_comp_1.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_22_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.593 | TNS=-592.187 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[3]_i_3_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[3]_i_3_comp_1.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_22_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.593 | TNS=-592.217 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[3]_i_4_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[3]_i_4_comp_1.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_22_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.575 | TNS=-591.136 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[11]_i_5_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[11]_i_5_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.551 | TNS=-591.135 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[11]_i_6_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[11]_i_6_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.527 | TNS=-591.099 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[7]_i_5_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[7]_i_5_comp_1.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_22_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.516 | TNS=-591.072 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[7]_i_6_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[7]_i_6_comp_1.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_22_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.414 | TNS=-590.608 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[7]_i_3_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[7]_i_3_comp_1.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_22_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.407 | TNS=-590.604 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[7]_i_4_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[7]_i_4_comp_1.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_22_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.395 | TNS=-590.556 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[3]_i_5_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[3]_i_5_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_69_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.389 | TNS=-590.503 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[3]_i_6_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[3]_i_6_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_69_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.357 | TNS=-589.226 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[11]_i_5_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[11]_i_5_comp_1.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_22_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.339 | TNS=-589.188 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[11]_i_4_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[11]_i_4_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.336 | TNS=-589.225 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[11]_i_6_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[11]_i_6_comp_1.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_22_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.301 | TNS=-589.155 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[7]_i_5_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[7]_i_5_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_69_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.295 | TNS=-589.203 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[3]_i_3_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[3]_i_3_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_69_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.295 | TNS=-589.235 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[7]_i_6_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[7]_i_6_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_69_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.295 | TNS=-589.279 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[3]_i_4_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[3]_i_4_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_69_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.277 | TNS=-589.159 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_57_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_77_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_97_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_117_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_137_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_157_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_176_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_52_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_72_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_92_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_112_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_132_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_152_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_171_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_67_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_87_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_107_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_127_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_147_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_168_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_11_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_62_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_82_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_102_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_122_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_142_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_165_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_38_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_58_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_78_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_98_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_118_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_138_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_158_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_175_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_33_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_53_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_73_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_93_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_113_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_133_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_153_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_172_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_28_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_68_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_88_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_108_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_128_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_148_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_169_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_11_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_23_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_63_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_83_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_103_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_123_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_143_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_166_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_115_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_233_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_367_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_501_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_635_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_769_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_903_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1019_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_110_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_228_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_362_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_496_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_630_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_764_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_898_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1016_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_38_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_223_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_357_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_491_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_625_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_759_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_893_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1013_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_90_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_207_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_336_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_465_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_594_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_723_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_852_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_984_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_91_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_208_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_337_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_466_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_595_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_724_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_853_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_988_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_76_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_96_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_213_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_342_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_471_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_600_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_729_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_858_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_991_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_85_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_188_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_218_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_347_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_476_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_605_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_734_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_863_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_994_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_79_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_193_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_322_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_352_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_481_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_610_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_739_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_868_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_997_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_80_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_194_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_327_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_456_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_486_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_615_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_744_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_873_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1001_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_55_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_139_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_264_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_403_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_542_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_620_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_749_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_878_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1004_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[18]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_56_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_140_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_265_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_404_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_543_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_681_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_754_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_883_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1007_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[19]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_120_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_238_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_372_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_506_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_640_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_774_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_888_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1010_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[20]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_121_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_239_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_373_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_507_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_641_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_775_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_916_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_52_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_126_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_244_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_378_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_512_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_646_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_780_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_913_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1026_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[22]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_131_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_134_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_249_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_383_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_517_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_651_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_785_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_918_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1029_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_149_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_254_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_259_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_388_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_522_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_656_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_790_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_923_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1032_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[24]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_152_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_274_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_393_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_398_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_527_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_661_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_795_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_928_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_153_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_279_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_413_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_532_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_537_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_666_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_800_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_933_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1039_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[26]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_158_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_284_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_418_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_552_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_671_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_676_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_805_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_938_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1040_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[27]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_159_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_289_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_423_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_557_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_690_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_810_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_815_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_943_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1045_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[28]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_164_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_294_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_428_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_562_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_695_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_824_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_948_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_953_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_70_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_178_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_312_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_446_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_580_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_713_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_842_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_971_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1063_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[30]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_71_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_179_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_313_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_447_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_581_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_714_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_843_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 16 pins.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_979_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.256 | TNS=-588.907 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 16 pins.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_980_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.189 | TNS=-588.103 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_972_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1066_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_68_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_169_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_303_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_437_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_571_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_704_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_833_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_962_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 10 pins.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_1060_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.112 | TNS=-587.179 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1060_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle3[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1033_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1020_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1096_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1092_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-134] Processed net u_hall_electric_angle/elec_angle[11]_i_1136_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-81] Processed net u_hall_electric_angle/elec_angle[11]_i_1136_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_1136_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.107 | TNS=-587.119 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[11]_i_1092_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[11]_i_1092_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_1136_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.102 | TNS=-587.059 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1095_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1091_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-134] Processed net u_hall_electric_angle/elec_angle[11]_i_1134_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1134_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1135_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1129_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1122_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1115_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1156_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net u_hall_electric_angle/state_change_cnt_reg_n_0_[3]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/state_change_cnt_reg_n_0_[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.099 | TNS=-587.023 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_1106_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.086 | TNS=-586.867 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1155_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net u_hall_electric_angle/state_change_cnt_reg_n_0_[4]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/state_change_cnt_reg_n_0_[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.079 | TNS=-586.783 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1116_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1159_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net u_hall_electric_angle/state_change_cnt_reg_n_0_[2]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/state_change_cnt_reg_n_0_[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.072 | TNS=-586.699 |
+INFO: [Physopt 32-81] Processed net u_hall_electric_angle/state_change_cnt_reg_n_0_[1]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/state_change_cnt_reg_n_0_[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.015 | TNS=-586.015 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/state_change_cnt_reg_n_0_[2]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/Q[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net instance_name/inst/clk_out1_clk_wiz_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_2_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[3]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.003 | TNS=-581.812 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_69_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_176_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_171_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_168_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_165_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_175_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_172_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_169_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_166_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1019_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1016_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1013_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_984_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_988_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_991_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_994_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_997_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1001_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1004_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[18]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1007_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[19]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1010_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[20]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_916_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1026_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[22]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1029_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1032_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[24]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1039_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[26]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1040_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[27]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1045_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[28]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1063_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[30]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1066_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1060_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle3[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1095_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1091_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1134_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1135_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1159_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/state_change_cnt_reg_n_0_[2]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.003 | TNS=-581.812 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Phase 3 Critical Path Optimization | Checksum: 222f0aa13
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1939.934 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-49.003 | TNS=-581.812 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/Q[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net instance_name/inst/clk_out1_clk_wiz_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_2_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[11]_i_3_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[11]_i_3_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-48.850 | TNS=-581.648 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[11]_i_4_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[11]_i_4_comp_1.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_22_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-48.626 | TNS=-581.224 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_57_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_77_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_97_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_117_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_137_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_157_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_176_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_52_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_72_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_92_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_112_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_132_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_152_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_171_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_67_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_87_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_107_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_127_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_147_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_168_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_11_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_62_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_82_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_102_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_122_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[3]_i_142_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_165_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_38_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_58_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_78_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_98_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_118_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_138_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_158_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_175_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_33_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_53_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_73_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_93_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_113_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_133_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_153_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_172_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_28_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_68_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_88_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_108_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_128_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_148_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_169_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_11_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_23_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_63_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_83_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_103_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_123_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[7]_i_143_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_166_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_115_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_233_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_367_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_501_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_635_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_769_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_903_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1019_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_110_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_228_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_362_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_496_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_630_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_764_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_898_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1016_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_38_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_223_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_357_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_491_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_625_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_759_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_893_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1013_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_90_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_207_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_336_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_465_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_594_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_723_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_852_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_984_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_91_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_208_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_337_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_466_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_595_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_724_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_853_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_988_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_76_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_96_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_213_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_342_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_471_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_600_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_729_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_858_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_991_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_85_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_188_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_218_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_347_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_476_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_605_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_734_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_863_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_994_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_79_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_193_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_322_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_352_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_481_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_610_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_739_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_868_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_997_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_80_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_194_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_327_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_456_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_486_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_615_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_744_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_873_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1001_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_55_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_139_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_264_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_403_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_542_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_620_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_749_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_878_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1004_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[18]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_56_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_140_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_265_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_404_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_543_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_681_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_754_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_883_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1007_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[19]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_120_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_238_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_372_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_506_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_640_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_774_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_888_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1010_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[20]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_121_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_239_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_373_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_507_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_641_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_775_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_916_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_52_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_126_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_244_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_378_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_512_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_646_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_780_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_913_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1026_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[22]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_131_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_134_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_249_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_383_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_517_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_651_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_785_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_918_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1029_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_149_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_254_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_259_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_388_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_522_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_656_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_790_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_923_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1032_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[24]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_152_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_274_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_393_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_398_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_527_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_661_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_795_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_928_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_153_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_279_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_413_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_532_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_537_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_666_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_800_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_933_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1039_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[26]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_158_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_284_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_418_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_552_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_671_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_676_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_805_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_938_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1040_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[27]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_159_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_289_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_423_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_557_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_690_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_810_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_815_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_943_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1045_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[28]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_164_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_294_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_428_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_562_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_695_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_824_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_948_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_953_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_70_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_178_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_312_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_446_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_580_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_713_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_842_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_971_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1063_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[30]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_71_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_179_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_313_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_447_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_581_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_714_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_843_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_972_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1066_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_68_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_169_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_303_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_437_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_571_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_704_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_833_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_962_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1060_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle3[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1033_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1020_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1095_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1091_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-134] Processed net u_hall_electric_angle/elec_angle[11]_i_1134_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-81] Processed net u_hall_electric_angle/elec_angle[11]_i_1134_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_1134_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-48.624 | TNS=-581.200 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1097_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1093_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-134] Processed net u_hall_electric_angle/elec_angle[11]_i_1137_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1137_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1133_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1127_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1123_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1166_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net u_hall_electric_angle/state_change_cnt_reg_n_0_[2]_repN. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/state_change_cnt_reg_n_0_[2]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-48.621 | TNS=-581.164 |
+INFO: [Physopt 32-710] Processed net u_hall_electric_angle/elec_angle[11]_i_1091_n_0. Critical path length was reduced through logic transformation on cell u_hall_electric_angle/elec_angle[11]_i_1091_comp.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_1134_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-48.591 | TNS=-580.804 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 10 pins.
+INFO: [Physopt 32-735] Processed net u_hall_electric_angle/elec_angle[11]_i_1167_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-48.566 | TNS=-580.504 |
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1101_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-134] Processed net u_hall_electric_angle/elec_angle[11]_i_1143_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1143_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1141_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1135_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1129_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1122_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1115_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1116_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1159_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/state_change_cnt_reg_n_0_[2]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/Q[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net instance_name/inst/clk_out1_clk_wiz_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_2_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_176_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_171_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_168_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[3]_i_165_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_175_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_172_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_169_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[7]_i_166_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1019_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1016_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1013_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_984_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_988_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_991_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_994_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_997_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1001_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1004_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[18]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1007_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[19]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1010_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[20]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_916_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1026_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[22]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1029_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1032_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[24]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1039_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[26]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1040_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[27]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1045_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[28]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1063_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[30]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1066_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle2[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1060_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/interp_angle3[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1101_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1143_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle_reg[11]_i_1141_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1159_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/elec_angle[11]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_hall_electric_angle/state_change_cnt_reg_n_0_[2]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-48.566 | TNS=-580.504 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Phase 4 Critical Path Optimization | Checksum: 222f0aa13
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:17 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1939.934 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-48.566 | TNS=-580.504 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          1.251  |         15.116  |            7  |              0  |                    44  |           0  |           2  |  00:00:16  |
+|  Total          |          1.251  |         15.116  |            7  |              0  |                    44  |           0  |           3  |  00:00:16  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 1fd3eb369
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:17 . Memory (MB): peak = 1939.934 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+1089 Infos, 14 Warnings, 14 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:17 . Memory (MB): peak = 1939.934 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.294 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1939.934 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.335 . Memory (MB): peak = 1939.934 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/1projectapp/FPGA/prj/current/current.runs/impl_1/fpga_top_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 5f90e371 ConstDB: 0 ShapeSum: d1b02530 RouteDB: a0815c57
+Post Restoration Checksum: NetGraph: 18834ca5 | NumContArr: d774a627 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 27549e806
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1985.008 ; gain = 45.074
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 27549e806
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1985.008 ; gain = 45.074
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 27549e806
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1985.008 ; gain = 45.074
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 1f73f3989
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 2019.070 ; gain = 79.137
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-46.038| TNS=-550.164| WHS=-0.192 | THS=-35.284|
+
+
+Phase 2.4 Soft Constraint Pins - Fast Budgeting
+Phase 2.4 Soft Constraint Pins - Fast Budgeting | Checksum: 1d2fca452
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 2067.660 ; gain = 127.727
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 5166
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 5166
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1be503001
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 2067.660 ; gain = 127.727
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 1be503001
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 2067.660 ; gain = 127.727
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 25ce275a6
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 2067.660 ; gain = 127.727
+Phase 4 Initial Routing | Checksum: 25ce275a6
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 2067.660 ; gain = 127.727
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 333
+ Number of Nodes with overlaps = 55
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-50.971| TNS=-609.506| WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 2853cee6b
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 2070.574 ; gain = 130.641
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 302
+ Number of Nodes with overlaps = 102
+ Number of Nodes with overlaps = 68
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 41
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 31
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-51.173| TNS=-611.946| WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 240934172
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:28 . Memory (MB): peak = 2070.574 ; gain = 130.641
+Phase 5 Rip-up And Reroute | Checksum: 240934172
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:28 . Memory (MB): peak = 2070.574 ; gain = 130.641
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1b736cd3e
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:28 . Memory (MB): peak = 2070.574 ; gain = 130.641
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-50.971| TNS=-609.506| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 6.1 Delay CleanUp | Checksum: 224fb2c2a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.574 ; gain = 130.641
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 224fb2c2a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.574 ; gain = 130.641
+Phase 6 Delay and Skew Optimization | Checksum: 224fb2c2a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.574 ; gain = 130.641
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-50.971| TNS=-609.506| WHS=0.107  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 24dc90ce2
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.574 ; gain = 130.641
+Phase 7 Post Hold Fix | Checksum: 24dc90ce2
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.574 ; gain = 130.641
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.94268 %
+  Global Horizontal Routing Utilization  = 1.60216 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 43.2432%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 53.1532%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 36.7647%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 47.0588%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 8 Route finalize | Checksum: 24dc90ce2
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.574 ; gain = 130.641
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 24dc90ce2
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.574 ; gain = 130.641
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 271b0f4df
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.574 ; gain = 130.641
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 271b0f4df
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.574 ; gain = 130.641
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-50.971| TNS=-609.506| WHS=0.107  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 12 Post Router Timing | Checksum: 271b0f4df
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.574 ; gain = 130.641
+Total Elapsed time in route_design: 29.256 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 1cbdfc7d1
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.574 ; gain = 130.641
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 1cbdfc7d1
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.574 ; gain = 130.641
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+1104 Infos, 15 Warnings, 14 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:30 . Memory (MB): peak = 2070.574 ; gain = 130.641
+INFO: [Vivado 12-24828] Executing command : report_drc -file fpga_top_drc_routed.rpt -pb fpga_top_drc_routed.pb -rpx fpga_top_drc_routed.rpx
+Command: report_drc -file fpga_top_drc_routed.rpt -pb fpga_top_drc_routed.pb -rpx fpga_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/1projectapp/FPGA/prj/current/current.runs/impl_1/fpga_top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file fpga_top_methodology_drc_routed.rpt -pb fpga_top_methodology_drc_routed.pb -rpx fpga_top_methodology_drc_routed.rpx
+Command: report_methodology -file fpga_top_methodology_drc_routed.rpt -pb fpga_top_methodology_drc_routed.pb -rpx fpga_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file D:/1projectapp/FPGA/prj/current/current.runs/impl_1/fpga_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file fpga_top_timing_summary_routed.rpt -pb fpga_top_timing_summary_routed.pb -rpx fpga_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file fpga_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file fpga_top_route_status.rpt -pb fpga_top_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file fpga_top_power_routed.rpt -pb fpga_top_power_summary_routed.pb -rpx fpga_top_power_routed.rpx
+Command: report_power -file fpga_top_power_routed.rpt -pb fpga_top_power_summary_routed.pb -rpx fpga_top_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+1121 Infos, 16 Warnings, 15 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file fpga_top_clock_utilization_routed.rpt
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file fpga_top_bus_skew_routed.rpt -pb fpga_top_bus_skew_routed.pb -rpx fpga_top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 2094.613 ; gain = 24.039
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2097.172 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.286 . Memory (MB): peak = 2101.098 ; gain = 3.926
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2101.098 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 2101.098 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2101.098 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2101.098 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.368 . Memory (MB): peak = 2101.098 ; gain = 3.926
+INFO: [Common 17-1381] The checkpoint 'D:/1projectapp/FPGA/prj/current/current.runs/impl_1/fpga_top_routed.dcp' has been generated.
+Command: write_bitstream -force fpga_top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./fpga_top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+1136 Infos, 16 Warnings, 15 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 2602.844 ; gain = 501.746
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 09:35:48 2026...

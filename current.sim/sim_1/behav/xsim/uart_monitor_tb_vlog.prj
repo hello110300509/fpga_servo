@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../xilinx/2025.1/Vivado/data/rsb/busdef" --include "../../../../project_dianliu.ip_user_files/ipstatic" \
+"../../../../project_dianliu.srcs/sources_1/imports/RTL/uart_monitor.v" \
+"../../../../project_dianliu.srcs/sim_1/new/monitor_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

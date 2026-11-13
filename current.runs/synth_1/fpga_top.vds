@@ -1,0 +1,730 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Jul 31 09:32:25 2026
+# Process ID         : 52860
+# Current directory  : D:/1projectapp/FPGA/prj/current/current.runs/synth_1
+# Command line       : vivado.exe -log fpga_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_top.tcl
+# Log file           : D:/1projectapp/FPGA/prj/current/current.runs/synth_1/fpga_top.vds
+# Journal file       : D:/1projectapp/FPGA/prj/current/current.runs/synth_1\vivado.jou
+# Running On         : snowman
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 5800H with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 14877 MB
+# Swap memory        : 39815 MB
+# Total Virtual      : 54692 MB
+# Available Virtual  : 4647 MB
+#-----------------------------------------------------------
+source fpga_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 495.012 ; gain = 213.902
+Command: read_checkpoint -incremental D:/1projectapp/FPGA/prj/current/current.srcs/utils_1/imports/synth_1/fpga_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/1projectapp/FPGA/prj/current/current.srcs/utils_1/imports/synth_1/fpga_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top fpga_top -part xc7a35tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 51868
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1192.891 ; gain = 499.988
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-9339] data object 'float0' is already declared [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:677]
+INFO: [Synth 8-6826] previous declaration of 'float0' is from here [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:670]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'float0' is ignored [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:677]
+CRITICAL WARNING: [Synth 8-9339] data object 'float1' is already declared [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:678]
+INFO: [Synth 8-6826] previous declaration of 'float1' is from here [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:671]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'float1' is ignored [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:678]
+INFO: [Synth 8-11241] undeclared symbol 'phi', assumed default net type 'wire' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:59]
+INFO: [Synth 8-6157] synthesizing module 'fpga_top' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:11]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [D:/1projectapp/FPGA/prj/current/current.runs/synth_1/.Xil/Vivado-52860-snowman/realtime/clk_wiz_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (0#1) [D:/1projectapp/FPGA/prj/current/current.runs/synth_1/.Xil/Vivado-52860-snowman/realtime/clk_wiz_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'hall_electric_angle' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/new/hall.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'hall_electric_angle' (0#1) [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/new/hall.v:1]
+WARNING: [Synth 8-7071] port 'hall_state' of module 'hall_electric_angle' is unconnected for instance 'u_hall_electric_angle' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:87]
+WARNING: [Synth 8-7071] port 'prev_state_duration' of module 'hall_electric_angle' is unconnected for instance 'u_hall_electric_angle' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:87]
+WARNING: [Synth 8-7071] port 'state_changed' of module 'hall_electric_angle' is unconnected for instance 'u_hall_electric_angle' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:87]
+WARNING: [Synth 8-7071] port 'state_change_cnt' of module 'hall_electric_angle' is unconnected for instance 'u_hall_electric_angle' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:87]
+WARNING: [Synth 8-7071] port 'sector_start_angle' of module 'hall_electric_angle' is unconnected for instance 'u_hall_electric_angle' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:87]
+WARNING: [Synth 8-7071] port 'angular_vel' of module 'hall_electric_angle' is unconnected for instance 'u_hall_electric_angle' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:87]
+WARNING: [Synth 8-7071] port 'state_switch_cnt' of module 'hall_electric_angle' is unconnected for instance 'u_hall_electric_angle' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:87]
+WARNING: [Synth 8-7071] port 'mechanical_cycle_cnt' of module 'hall_electric_angle' is unconnected for instance 'u_hall_electric_angle' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:87]
+WARNING: [Synth 8-7071] port 'temp_cycle_cnt' of module 'hall_electric_angle' is unconnected for instance 'u_hall_electric_angle' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:87]
+WARNING: [Synth 8-7023] instance 'u_hall_electric_angle' of module 'hall_electric_angle' has 17 connections declared, but only 8 given [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:87]
+INFO: [Synth 8-6157] synthesizing module 'adc_ad7928' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/adc_ad7928.v:1825]
+	Parameter CH_CNT bound to: 3'b111 
+	Parameter CH0 bound to: 3'b000 
+	Parameter CH1 bound to: 3'b001 
+	Parameter CH2 bound to: 3'b010 
+	Parameter CH3 bound to: 3'b011 
+	Parameter CH4 bound to: 3'b100 
+	Parameter CH5 bound to: 3'b101 
+	Parameter CH6 bound to: 3'b110 
+	Parameter CH7 bound to: 3'b111 
+INFO: [Synth 8-6155] done synthesizing module 'adc_ad7928' (0#1) [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/adc_ad7928.v:1825]
+INFO: [Synth 8-6157] synthesizing module 'foc_top' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/foc_top.v:11]
+	Parameter INIT_CYCLES bound to: 26777216 - type: integer 
+	Parameter ANGLE_INV bound to: 1'b0 
+	Parameter POLE_PAIR bound to: 8'b00000100 
+	Parameter MAX_AMP bound to: 9'b110000000 
+	Parameter SAMPLE_DELAY bound to: 9'b001111000 
+INFO: [Synth 8-6157] synthesizing module 'clark_tr' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/clark_tr.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'clark_tr' (0#1) [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/clark_tr.v:9]
+INFO: [Synth 8-6157] synthesizing module 'park_tr' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/park_tr.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sincos' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/sincos.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sincos' (0#1) [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/sincos.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'park_tr' (0#1) [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/park_tr.v:9]
+INFO: [Synth 8-6157] synthesizing module 'pi_controller' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/pi_controller.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'pi_controller' (0#1) [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/pi_controller.v:16]
+INFO: [Synth 8-6157] synthesizing module 'cartesian2polar' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/cartesian2polar.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'cartesian2polar' (0#1) [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/cartesian2polar.v:9]
+INFO: [Synth 8-6157] synthesizing module 'svpwm' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/svpwm.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'svpwm' (0#1) [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/svpwm.v:13]
+INFO: [Synth 8-6157] synthesizing module 'hold_detect' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/hold_detect.v:9]
+	Parameter SAMPLE_DELAY bound to: 16'b0000000001111000 
+INFO: [Synth 8-6155] done synthesizing module 'hold_detect' (0#1) [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/hold_detect.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'foc_top' (0#1) [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/foc_top.v:11]
+WARNING: [Synth 8-7071] port 'wm' of module 'foc_top' is unconnected for instance 'u_foc_top' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:143]
+WARNING: [Synth 8-7023] instance 'u_foc_top' of module 'foc_top' has 29 connections declared, but only 28 given [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:143]
+INFO: [Synth 8-6157] synthesizing module 'uart_monitor' [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:533]
+	Parameter CLK_DIV bound to: 16'b0000000001001000 
+INFO: [Synth 8-6155] done synthesizing module 'uart_monitor' (0#1) [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:533]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_top' (0#1) [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:11]
+WARNING: [Synth 8-7137] Register i_a_reg in module adc_ad7928 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/adc_ad7928.v:1960]
+WARNING: [Synth 8-7137] Register i_b_reg in module adc_ad7928 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/adc_ad7928.v:1961]
+WARNING: [Synth 8-7137] Register i_c_reg in module adc_ad7928 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/adc_ad7928.v:1962]
+WARNING: [Synth 8-3848] Net offset in module/entity foc_top does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/foc_top.v:57]
+WARNING: [Synth 8-3848] Net enhall in module/entity foc_top does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/foc/foc_top.v:35]
+WARNING: [Synth 8-7137] Register send_buf_reg[0] in module uart_monitor has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:798]
+WARNING: [Synth 8-7137] Register send_buf_reg[1] in module uart_monitor has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:798]
+WARNING: [Synth 8-7137] Register send_buf_reg[2] in module uart_monitor has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:798]
+WARNING: [Synth 8-7137] Register send_buf_reg[3] in module uart_monitor has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:798]
+WARNING: [Synth 8-7137] Register send_buf_reg[4] in module uart_monitor has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:798]
+WARNING: [Synth 8-7137] Register send_buf_reg[5] in module uart_monitor has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:798]
+WARNING: [Synth 8-7137] Register send_buf_reg[6] in module uart_monitor has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:798]
+WARNING: [Synth 8-7137] Register send_buf_reg[7] in module uart_monitor has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:798]
+WARNING: [Synth 8-7137] Register send_buf_reg[8] in module uart_monitor has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:798]
+WARNING: [Synth 8-7137] Register send_buf_reg[9] in module uart_monitor has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:798]
+WARNING: [Synth 8-7137] Register send_buf_reg[10] in module uart_monitor has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:798]
+WARNING: [Synth 8-7137] Register send_buf_reg[11] in module uart_monitor has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:798]
+WARNING: [Synth 8-3848] Net send_buf[12] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[13] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[14] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[15] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[16] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[17] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[18] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[19] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[20] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[21] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[22] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[23] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[24] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[25] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[26] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[27] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[28] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[29] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[30] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-3848] Net send_buf[31] in module/entity uart_monitor does not have driver. [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/uart_monitor.v:716]
+WARNING: [Synth 8-6014] Unused sequential element ss_delay_cnt_reg was removed.  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:246]
+WARNING: [Synth 8-6014] Unused sequential element uart_en_reg was removed.  [D:/1projectapp/FPGA/prj/current/current.srcs/sources_1/imports/RTL/fpga_top.v:248]
+WARNING: [Synth 8-7129] Port psioffst[11] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[10] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[9] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[8] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[7] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[6] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[5] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[4] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[3] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[2] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[1] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[0] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enhall in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[31] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[30] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[29] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[28] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[27] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[26] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[25] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[24] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[23] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[22] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[21] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[20] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[19] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[18] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[17] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[16] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[15] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[14] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[13] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[12] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[11] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[10] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[9] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[8] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[7] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[6] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[5] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[4] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[3] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[2] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[1] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[0] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uart_rx in module fpga_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1349.637 ; gain = 656.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1349.637 ; gain = 656.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1349.637 ; gain = 656.734
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1349.637 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/1projectapp/FPGA/prj/current/current.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'instance_name'
+Finished Parsing XDC File [d:/1projectapp/FPGA/prj/current/current.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'instance_name'
+Parsing XDC File [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'locked'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'spi_miso'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'spi_mosi'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'spi_sck'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'spi_ss'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'spi_mosi'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'spi_miso'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'locked'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'spi_sck'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'spi_ss'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'led'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'led'. [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc:37]
+Finished Parsing XDC File [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/fpga_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/1projectapp/FPGA/prj/current/current.srcs/constrs_1/new/fpga_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1425.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1425.141 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1425.141 ; gain = 732.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1425.141 ; gain = 732.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1425.141 ; gain = 732.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'stat_reg' in module 'sincos'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_monitor'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              000
+                      S1 |                           000010 |                              001
+                      S2 |                           000100 |                              010
+                      S3 |                           001000 |                              011
+                      S4 |                           010000 |                              100
+                  iSTATE |                           100000 |                              101
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stat_reg' using encoding 'one-hot' in module 'sincos'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                               00 |                               00
+                ST_START |                               01 |                               01
+                 ST_WAIT |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_monitor'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1425.141 ; gain = 732.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 4     
+	   2 Input   33 Bit       Adders := 4     
+	   2 Input   32 Bit       Adders := 5     
+	   3 Input   32 Bit       Adders := 3     
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input   25 Bit       Adders := 1     
+	   4 Input   16 Bit       Adders := 6     
+	   2 Input   16 Bit       Adders := 9     
+	   3 Input   16 Bit       Adders := 6     
+	   2 Input   12 Bit       Adders := 10    
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 5     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 25    
+	               31 Bit    Registers := 4     
+	               28 Bit    Registers := 3     
+	               16 Bit    Registers := 27    
+	               15 Bit    Registers := 1     
+	               12 Bit    Registers := 23    
+	               11 Bit    Registers := 7     
+	               10 Bit    Registers := 6     
+	                9 Bit    Registers := 8     
+	                8 Bit    Registers := 13    
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 6     
+	                1 Bit    Registers := 56    
++---Multipliers : 
+	              12x32  Multipliers := 1     
+	               3x32  Multipliers := 1     
+	              22x32  Multipliers := 1     
++---ROMs : 
+	                    ROMs := 4     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 25    
+	   2 Input   30 Bit        Muxes := 1     
+	   2 Input   28 Bit        Muxes := 5     
+	   2 Input   23 Bit        Muxes := 2     
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 11    
+	   7 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 9     
+	   6 Input   12 Bit        Muxes := 1     
+	   3 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 8     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 7     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 3     
+	   4 Input    6 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 61    
+	   7 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 9     
+	   6 Input    1 Bit        Muxes := 8     
+	   9 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 8     
+	   8 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP angular_vel1, operation Mode is: (A:0x2fefd9)*B.
+DSP Report: operator angular_vel1 is absorbed into DSP angular_vel1.
+DSP Report: operator angular_vel1 is absorbed into DSP angular_vel1.
+DSP Report: Generating DSP angular_vel1, operation Mode is: (PCIN>>17)+(A:0x2fefd9)*B.
+DSP Report: operator angular_vel1 is absorbed into DSP angular_vel1.
+DSP Report: operator angular_vel1 is absorbed into DSP angular_vel1.
+DSP Report: Generating DSP beta_sin0, operation Mode is: A*B.
+DSP Report: operator beta_sin0 is absorbed into DSP beta_sin0.
+DSP Report: Generating DSP alpha_cos0, operation Mode is: A*B.
+DSP Report: operator alpha_cos0 is absorbed into DSP alpha_cos0.
+DSP Report: Generating DSP alpha_sin0, operation Mode is: A*B.
+DSP Report: operator alpha_sin0 is absorbed into DSP alpha_sin0.
+DSP Report: Generating DSP beta_cos0, operation Mode is: A*B.
+DSP Report: operator beta_cos0 is absorbed into DSP beta_cos0.
+DSP Report: Generating DSP protect_mul2, operation Mode is: A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP protect_mul2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP protect_mul2, operation Mode is: A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP protect_mul2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP protect_mul2, operation Mode is: A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP protect_mul2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP protect_mul2, operation Mode is: A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP protect_mul2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP protect_mul2, operation Mode is: A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP protect_mul2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP protect_mul2, operation Mode is: A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP protect_mul2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP protect_mul2, operation Mode is: A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP protect_mul2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP protect_mul2, operation Mode is: A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP protect_mul2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: operator protect_mul2 is absorbed into DSP protect_mul2.
+DSP Report: Generating DSP mul, operation Mode is: A*B.
+DSP Report: operator mul is absorbed into DSP mul.
+DSP Report: Generating DSP mul_y, operation Mode is: A*B.
+DSP Report: operator mul_y is absorbed into DSP mul_y.
+WARNING: [Synth 8-7129] Port i_ia[15] in module clark_tr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[11] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[10] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[9] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[8] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[7] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[6] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[5] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[4] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[3] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[2] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[1] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psioffst[0] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enhall in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[31] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[30] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[29] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[28] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[27] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[26] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[25] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[24] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[23] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[22] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[21] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[20] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[19] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[18] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[17] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[16] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[15] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[14] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[13] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[12] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[11] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[10] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[9] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[8] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[7] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[6] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[5] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[4] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[3] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[2] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[1] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wm[0] in module foc_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uart_rx in module fpga_top is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (u_sincos/FSM_onehot_stat_reg[5]) is unused and will be removed from module park_tr.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1445.766 ; gain = 752.863
+---------------------------------------------------------------------------------
+ Sort Area is  protect_mul2_10 : 0 0 : 2701 4861 : Used 1 time 0
+ Sort Area is  protect_mul2_10 : 0 1 : 2160 4861 : Used 1 time 0
+ Sort Area is  protect_mul2_12 : 0 0 : 2701 4861 : Used 1 time 0
+ Sort Area is  protect_mul2_12 : 0 1 : 2160 4861 : Used 1 time 0
+ Sort Area is  protect_mul2_8 : 0 0 : 2701 4861 : Used 1 time 0
+ Sort Area is  protect_mul2_8 : 0 1 : 2160 4861 : Used 1 time 0
+ Sort Area is  protect_mul2_e : 0 0 : 2701 4861 : Used 1 time 0
+ Sort Area is  protect_mul2_e : 0 1 : 2160 4861 : Used 1 time 0
+ Sort Area is  angular_vel1_0 : 0 0 : 2679 4498 : Used 1 time 0
+ Sort Area is  angular_vel1_0 : 0 1 : 1819 4498 : Used 1 time 0
+ Sort Area is  protect_mul2_11 : 0 0 : 2158 3958 : Used 1 time 0
+ Sort Area is  protect_mul2_11 : 0 1 : 1800 3958 : Used 1 time 0
+ Sort Area is  protect_mul2_13 : 0 0 : 2158 3958 : Used 1 time 0
+ Sort Area is  protect_mul2_13 : 0 1 : 1800 3958 : Used 1 time 0
+ Sort Area is  protect_mul2_b : 0 0 : 2158 3958 : Used 1 time 0
+ Sort Area is  protect_mul2_b : 0 1 : 1800 3958 : Used 1 time 0
+ Sort Area is  protect_mul2_f : 0 0 : 2158 3958 : Used 1 time 0
+ Sort Area is  protect_mul2_f : 0 1 : 1800 3958 : Used 1 time 0
+ Sort Area is  alpha_cos0_3 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is  alpha_sin0_7 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is  beta_cos0_6 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is  beta_sin0_5 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is  mul_14 : 0 0 : 901 901 : Used 1 time 0
+ Sort Area is  mul_y_16 : 0 0 : 701 701 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++----------------+--------------------+---------------+----------------+
+|Module Name     | RTL Object         | Depth x Width | Implemented As | 
++----------------+--------------------+---------------+----------------+
+|park_tr         | u_sincos/rom_y_reg | 1024x15       | Block RAM      | 
+|cartesian2polar | rom_a_reg          | 4096x9        | Block RAM      | 
+|cartesian2polar | rom_theta_reg      | 4096x9        | Block RAM      | 
+|svpwm           | x2_reg             | 1024x9        | Block RAM      | 
++----------------+--------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping               | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|hall_electric_angle | (A:0x2fefd9)*B            | 23     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hall_electric_angle | (PCIN>>17)+(A:0x2fefd9)*B | 23     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|park_tr             | A*B                       | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|park_tr             | A*B                       | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|park_tr             | A*B                       | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|park_tr             | A*B                       | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | A*B                       | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | (PCIN>>17)+A*B            | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | A*B                       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | (PCIN>>17)+A*B            | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | A*B                       | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | (PCIN>>17)+A*B            | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | A*B                       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | (PCIN>>17)+A*B            | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | A*B                       | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | (PCIN>>17)+A*B            | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | A*B                       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | (PCIN>>17)+A*B            | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | A*B                       | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | (PCIN>>17)+A*B            | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | A*B                       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller       | (PCIN>>17)+A*B            | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cartesian2polar     | A*B                       | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|svpwm               | A*B                       | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1614.340 ; gain = 921.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1680.121 ; gain = 987.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_foc_top/u_park_tr/u_sincos/rom_y_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_foc_top/u_cartesian2polar/rom_a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_foc_top/u_cartesian2polar/rom_theta_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1688.840 ; gain = 995.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1887.594 ; gain = 1194.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1887.594 ; gain = 1194.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1887.594 ; gain = 1194.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1887.594 ; gain = 1194.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1890.574 ; gain = 1197.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1890.574 ; gain = 1197.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|fpga_top    | u_foc_top/u_svpwm/rom_sy_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cartesian2polar | A*B          | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | A*B          | 16     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | PCIN>>17+A*B | 30     | 0      | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | A*B          | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | PCIN>>17+A*B | 17     | 0      | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | PCIN>>17+A*B | 30     | 0      | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | PCIN>>17+A*B | 17     | 0      | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | A*B          | 16     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | PCIN>>17+A*B | 30     | 0      | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | A*B          | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | PCIN>>17+A*B | 17     | 0      | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | PCIN>>17+A*B | 30     | 0      | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pi_controller   | PCIN>>17+A*B | 17     | 0      | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|park_tr         | (A*B)'       | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|park_tr         | (A*B)'       | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|park_tr         | (A*B)'       | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|park_tr         | (A*B)'       | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|svpwm           | (A*B)'       | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_1     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |clk_wiz  |     1|
+|2     |CARRY4   |   645|
+|3     |DSP48E1  |    22|
+|5     |LUT1     |   267|
+|6     |LUT2     |  1050|
+|7     |LUT3     |  1439|
+|8     |LUT4     |   390|
+|9     |LUT5     |   258|
+|10    |LUT6     |   320|
+|11    |MUXF7    |     1|
+|12    |RAMB18E1 |     2|
+|14    |RAMB36E1 |     2|
+|16    |SRL16E   |     1|
+|17    |FDCE     |  1322|
+|18    |FDPE     |    33|
+|19    |FDRE     |    68|
+|20    |IBUF     |     5|
+|21    |OBUF     |    10|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1890.574 ; gain = 1197.672
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 49 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 1890.574 ; gain = 1122.168
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1890.574 ; gain = 1197.672
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1899.777 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 672 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1903.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 6bb43cd
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 161 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 1903.406 ; gain = 1396.914
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1903.406 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/1projectapp/FPGA/prj/current/current.runs/synth_1/fpga_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file fpga_top_utilization_synth.rpt -pb fpga_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 09:33:41 2026...
